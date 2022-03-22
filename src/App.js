@@ -11,7 +11,7 @@ function App() {
         }}
       >
       <Link to="/invoices">Invoices</Link> |{""}
-      <Link to="/expenses">Expenses</Link>
+      <Link to="/expeneses">Expenses</Link>
       </nav>
     </div>
   );
