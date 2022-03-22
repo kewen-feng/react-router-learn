@@ -13,8 +13,8 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>} />
-      <Route path="/expenese" element={< Expenese/>} />
-      <Route path="/invoices" element={< Invoices/>} />
+      <Route path="expenese" element={< Expenese/>} />
+      <Route path="invoices" element={< Invoices/>} />
     </Routes>
   </BrowserRouter>,
   rootElement
