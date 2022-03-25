@@ -7,15 +7,18 @@ import {
 import App from './App';
 import Expenese from './routes/expenese';
 import Invoices from './routes/invoices';
+import Invoice from './routes/invoice'
 
 
 const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App/>} >
-        <Route path="expenese" element={<Expenese/>} />
-        <Route path="invoices" element={<Invoices/>} />
+      <Route path="/" element={<App />}>
+        <Route path="expenese" element={<Expenese />} />
+        <Route path="invoices" element={<Invoices />}>
+          <Route path=":invoiceId" element={<Invoice />}></Route>
+        </Route>
         <Route
           path="*"
           element={
